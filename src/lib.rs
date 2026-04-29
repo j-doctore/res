@@ -1,12 +1,8 @@
-mod cpu;
-mod bus;
+pub mod app;
+pub mod bus;
+pub mod cpu;
+pub mod demo;
+pub mod system;
 
-
-use bus::Bus;
-use cpu::Cpu;
-
-pub struct System {
-    pub bus: Bus,
-    cpu: Cpu
-}
+pub use system::System;
 
